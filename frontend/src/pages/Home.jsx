@@ -21,16 +21,16 @@ import Testimonial from '../components/Testimonial/Testimonial';
 const Home = () => {
     return (
         <>
-            <section className='hero_section pt-[60px] 2xl:h-[800px]'>
+            <section className='hero_section pt-[60px] 2xl:h-[800px] ' style={{backgroundColor:'#F2E4D8'}}>
                 <div className="container">
                     <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
                         <div>
                             <div className='lg:w-[570px]'>
                                 <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]'>
-                                    We help patients live a healthy, longer life.
+                                     Healthier, Longer Lives Ahead.
                                 </h1>
                                 <p className='text_para'>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam voluptas nostrum consequatur ipsum libero! Voluptatum repellat quasi, excepturi debitis pariatur voluptate ratione quo odio? Assumenda vitae sapiente placeat. Eligendi, exercitationem?
+                                Welcome to our Medicare hub, where health meets care seamlessly. We're dedicated to your well-being, offering personalized healthcare solutions. Explore a world of efficient appointments, reliable information, and a community that understands. Trust us for your health journey – because your well-being is our priority.
                                 </p>
                                 <button className='btn'>Request An Appointment</button>
 
@@ -71,17 +71,13 @@ const Home = () => {
                             </div>
                         </div>
 
-
-
-
-
                     </div>
                 </div>
 
 
             </section>
 
-            <section>
+            <section  style={{backgroundColor:'oldlace'}}>
                 <div className="container">
                     <div className='lg:w-[470px] mx-auto'>
                         <h2 className='heading text-center'>
@@ -106,7 +102,7 @@ const Home = () => {
                                     Find a Doctor
                                 </h2>
                                 <p className='text-[16px] leading-7 text text-textColor font-[400] mt-4 text-center'>
-                                    World-class care for everyone.Our health system offers unmatched,expert health care.From the lab to the clinic.
+                                    This tool helps the patient to search any doctor easily who is specialization with.
                                     </p>
 
                                     <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
@@ -126,7 +122,7 @@ const Home = () => {
                                     Find a Location
                                 </h2>
                                 <p className='text-[16px] leading-7 text text-textColor font-[400] mt-4 text-center'>
-                                    World-class care for everyone.Our health system offers unmatched,expert health care.From the lab to the clinic.
+                                Ensure that the "Find a Location" feature is mobile-friendly, as many users may access the website from their smartphones.
                                     </p>
 
                                     <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
@@ -146,7 +142,7 @@ const Home = () => {
                                     Book Appointment
                                 </h2>
                                 <p className='text-[16px] leading-7 text text-textColor font-[400] mt-4 text-center'>
-                                    World-class care for everyone.Our health system offers unmatched,expert health care.From the lab to the clinic.
+                                Implement secure patient portals to protect sensitive information during the appointment booking process.
                                     </p>
 
                                     <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
@@ -163,7 +159,7 @@ const Home = () => {
 
             <About/>
 
-            <section>
+            <section style={{backgroundColor:'oldlace'}}>
                 <div className="container">
                     <div className='xl:w-[470px] mx-auto'>
                         <h2 className='heading text-center'>Our medical Services</h2>
@@ -179,7 +175,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
+            <section style={{backgroundColor:'beige'}}>
                 <div className="container">
                     <div className='flex items-center justify-between flex-col lg:flex-row'>
                         <div className='xl:w-[670px]'>
@@ -228,7 +224,7 @@ const Home = () => {
             </section>
 
 
-            <section>
+            <section style={{backgroundColor:'oldlace'}}>
                 <div className="container">
                 <div className='xl:w-[470px] mx-auto'>
                         <h2 className='heading text-center'>Our Great Doctors</h2>
@@ -243,7 +239,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
+            <section style={{backgroundColor:'beige'}}>
                 <div className="container">
                     <div className='flex justify-between gap-[50px] lg:gap-0'>
                         <div className='w-1/2 hidden md:block'>
@@ -258,7 +254,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
+            <section style={{backgroundColor:'oldlace'}}>
                 <div className="container">
                 <div className='xl:w-[470px] mx-auto'>
                         <h2 className='heading text-center'>What our Patient say</h2>

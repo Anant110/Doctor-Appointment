@@ -4,13 +4,13 @@ import Doctor from '../modals/DoctorSchema.js'
 export const getAllReviews=async(req,res)=>{
 
     try {
-        const reviews=await Review.find({})
+        const reviews=await Review.find({});
 
         res.status(200).json({success:true,message:'Successful',data:reviews})
     } catch (err) {
         res.status(404).json({success:false,message:'Not found'})
     }
-}
+};
 
 export const createReview=async(req,res)=>{
     if(!req.body.doctor) req.body.doctor=req.params.doctorId

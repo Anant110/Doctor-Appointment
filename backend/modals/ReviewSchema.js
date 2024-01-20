@@ -45,7 +45,9 @@ reviewSchema.statics.calcAverageRatings=async function(doctorId){
     numOfRating:{$sum:1},
     avgRating:{$avg:'$rating'}
   }
-}])
+}
+])
+
 await Doctor.findByIdAndUpdate(doctorId,{
   totalRating:stats[0].numOfRating,
   avgRating:stats[0].avgRating,

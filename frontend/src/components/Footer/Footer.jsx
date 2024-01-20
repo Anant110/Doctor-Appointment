@@ -82,6 +82,7 @@ const Footer = () => {
   const year=new Date().getFullYear()
 
   return (
+    <div  style={{backgroundColor:'bisque'}}>
     <div className="container pb-16 pt-10">
       <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
         <div>
@@ -124,6 +125,7 @@ const Footer = () => {
         </div>
 
       </div>
+    </div>
     </div>
 
   )

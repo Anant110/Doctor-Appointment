@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
 
-    <header className='header flex items-center ' ref={headerRef} >
+    <header className='header flex items-center ' ref={headerRef} style={{backgroundColor:'#8E715B'}}>
       <div className="container">
         <div className="flex items-center justify-between">
 
@@ -85,12 +85,11 @@ const Header = () => {
           </div>
 
           <div className='flex items-center gap-4'>
-
             {
               token && user ? <div>
               <Link to={`${role=='doctor' ? '/doctors/profile/me': '/users/profile/me'}`}>
-                <figure className='w-[35px] h-[35px] rounded-full cursor-pointer'>
-                  <img src="" className='w-full rounded-full' alt="" />
+                <figure className='w-[50px] h-[60px] rounded-full cursor-pointer'>
+                  <img src={user.photo} className='w-full rounded-full' alt="" />
                 </figure>
               </Link>
             </div>:

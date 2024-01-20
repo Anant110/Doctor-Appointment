@@ -7,9 +7,6 @@ import FeedbackForm from './FeedbackForm';
 const Feedback = () => {
 
     const [showFeedbackForm, setshowFeedbackForm] = useState(false);
-
-
-
     return (
         <div>
             <div className='mb-[50px]'>
@@ -28,7 +25,7 @@ const Feedback = () => {
                     </div>
 
                     <div className='flex gap-1'>
-                        {[...Array(5).keys()].map((_, index) => <AiFillStar keys={index} color='#0067FF' />)}
+                        {[...Array(5).keys()].map((_, index) => <AiFillStar key={index} color='#0067FF' />)}
                     </div>
 
                 </div>

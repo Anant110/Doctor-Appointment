@@ -16,10 +16,8 @@ export const authenticate= async (req,res,next)=>{
         const decoded=jwt.verify(token,process.env.JWT_SECRET_KEY)
         req.userId=decoded.id
         req.role=decoded.role
-
-
-
-        next();       
+        next();  
+             
     } catch (err) {
         if(err.name=='TokenExpireError'){
             return res.status(401).json({message:'Token has Expired'})
@@ -45,8 +43,10 @@ export const restrict= roles=>async(req,res,next)=>{
         user=doctor;
     }
 
-    if(!roles.includes(user.role)){
-        return res.status(401).json({success:false,message:"You are not authorized"});
+    if(user && !roles.includes(user.role)){
+        return res.status(401).json({success:false, message:"You are not authorized"});
+    } else if (!user) {
+        return res.status(404).json({success:false, message:"User not found"});
     }
 
     next();

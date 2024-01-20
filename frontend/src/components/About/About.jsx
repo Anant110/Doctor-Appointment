@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section>
-        <div className="container">
+    <section  style={{backgroundColor:'beige'}}>
+        <div className="container" >
             <div className='flex justify-between gap-[50px] lg:gap[130px] xl:gap-0 flex-col lg:flex-row'>
                 <div className='relative w-3/4 lg:w-1/2 xl:w-[770px] z-10 order-2 lg:order-1'>
                     <img src={aboutImg} alt="" />
@@ -17,11 +17,11 @@ const About = () => {
                 <div className='w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2'>
                     <h2 className='heading'>Proud to be one of the nations best</h2>
                     <p className='text_para'>
-                        For 30 years in a row,U.S News and World Report recognized us as one of the best public hospitals in the Nation and #1 in Texas Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, sed quaerat quas libero temporibus iusto quibusdam iure soluta. Est quidem nemo harum nihil hic eaque debitis. Similique qui sunt rerum.
+                    As proud members of the nation's elite medical professionals, we at Medicare are dedicated to setting the highest standard of healthcare. With a collective commitment to expertise, compassion, and innovation, our team stands as a beacon of excellence.Each member contributes to a personalized, patient-centric approach, ensuring that your health journey is met with the utmost care.
                         </p>
 
                     <p className='text_para mt-[30px]'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nulla reiciendis velit obcaecati eius, veritatis hic natus delectus laudantium quasi quibusdam quae doloremque nobis fugiat, voluptate, vitae cumque accusamus pariatur.
+                    Embrace a healthier tomorrow with Medicare – where our esteemed doctors unite to deliver exceptional care, setting new benchmarks in medical excellence and patient satisfaction.
                     </p>
 
                     <Link to='/'>
