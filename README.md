@@ -98,5 +98,4 @@ This project provides a platform where patients can explore doctor profiles and 
 B.Tech | ABES Engineering College  
 Focus Areas: **C++, DSA, OOPs, DBMS, MySQL, REACTJS, JAVASCRIPT**  
 📧 Email: anant.abes459@gmail.com  
-🔗 [LinkedIn](www.linkedin.com/in/anant680) • [GitHub](https://github.com/Anant110)
 
